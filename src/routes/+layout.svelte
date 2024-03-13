@@ -28,17 +28,14 @@
             },
             {
                 title: 'Портфолио', 
-                href: '/portfolio'
+                href: '/portfolio',
+                isShow:true,
             },
             {
                 title:'Контакты',
                 href:'/contact',
                 isShow:true,
-            },
-            {
-                title:'temp',
-                href:'/temp',
-            }
+            } 
         ]
 </script>
 
