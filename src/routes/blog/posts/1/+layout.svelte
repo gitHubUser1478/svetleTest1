@@ -8,5 +8,6 @@
         margin: 50px auto;
         max-width: 800px;
         padding: 0 20px;
+        margin-top: 200px;
     }
 </style>

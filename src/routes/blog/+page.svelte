@@ -19,24 +19,37 @@
 </div>
 
 <style>
-    .container{
-        margin: 50px auto;
-        max-width: 800px;
-        padding: 0 20px;
-    }
-    .blogposts{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
-    .post{
-        border: 1px solid #ddd;
-        padding: 10px;
-        box-shadow: 0 0 10px #eee;
-    }
-    .link{
-        color: rgb(10, 10, 139);
-    }
+
+.container {
+    background-color: #f9f9f9;
+    margin: 30px auto 50px;
+    margin-top: 200px;
+    max-width: 900px;
+}
+
+.blogposts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.link {
+    color: rgb(65, 105, 225);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(30, 144, 255);
+}
 </style>
 
 <script>

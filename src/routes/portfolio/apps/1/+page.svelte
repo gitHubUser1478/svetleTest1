@@ -1,5 +1,5 @@
 <script>
-    import Icon from './../../../../components/icon.svelte';
+    import Icon from "./../../../../components/icon.svelte";
     function remove(index){
         todoList.splice(index,1);
         todoList=todoList;
@@ -28,15 +28,15 @@
         <button class="add-todo" on:click={add}><span>+</span></button>
     </form>
     <div class="todos">
-        {#each todoList as item, index}
-        <div class="todo" class:completed={item.completed}>
-        <span class="todo__text">{item.task}</span>
+        {#each todoList as Item, index}
+        <div class="todo" class:completed={Item.completed}>
+        <span class="todo__text">{Item.task}</span>
         <div class="todo__buttons">
             <button class="complete" on:click={()=>complete(index)}>
-                <icon name="check-mark"/>
+                <Icon name="check-mark"/>
             </button>
             <button class="delete" on:click={()=>remove(index)}>
-                <icon name = "delete"/>
+                <Icon name = "delete"/>
             </button>
             </div>
         </div>
